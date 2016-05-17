@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arcCharts</title>
+	<style>
+	 canvas{
+	 	border: 1px solid black;
+	 }
+
+	</style>
+</head>
+<body>
+    <canvas id="canvas1" width="200" height="200"></canvas>	
+    <canvas id="canvas2" width="200" height="200"></canvas>	
+    <canvas id="canvas3" width="200" height="200"></canvas>	
+
+    <script type="text/javascript">
+
+    createArc("canvas1", "HTML", 0.9);
+    createArc("canvas2", "CSS", 0.8);
+    createArc("canvas3", "JavaScript", 0.75);
+
+    function createArc(canvasID, name, percent) {
+    	var canvas = document.getElementById(canvasID);
+		var currentEndAngle = 0;
+		var currentStartAngle = 0;
+		var currentColor = 'black';
+		var lineRadius = canvas.width / 2.2;
+		var lineWidth = canvas.width / 50;
+	    var context = canvas.getContext("2d");
+		var x = canvas.width / 2;
+		var y = canvas.height / 2;
+		var end = percent*2;
+
+	    // Draw Static Circle
+	   	context.arc(x, y, lineRadius - lineRadius * 0.1, 0, 2 * Math.PI);
+	    context.strokeStyle = "green";
+	    context.lineWidth = lineWidth - 2;
+	    context.stroke();
+
+
+	    // Draw Static Content
+	    context.beginPath();
+	    context.moveTo(0.15 * canvas.width, y);
+	    context.lineTo(0.85 * canvas.width, y);
+	 	context.font = x / 5 + "px" + " Arial";
+	 	context.textAlign = "center";
+		context.fillText(name, x, y * 0.9);
+	    context.strokeStyle = "red";
+	    context.lineWidth = lineWidth - 3;
+	    context.lineCap = "round";
+	    context.stroke();
+
+		var interval = setInterval(drawArc, 5);
+
+
+		function drawArc() { 
+
+		    var startAngle = currentStartAngle * Math.PI;
+		    var endAngle = (currentEndAngle) * Math.PI;
+		    
+		    currentStartAngle = currentEndAngle - 0.01;
+		    currentEndAngle = currentEndAngle + 0.01;
+		    
+		            
+		    var counterClockwise = false;
+
+		    context.beginPath();
+		    context.arc(x, y, lineRadius, startAngle, endAngle, counterClockwise);
+		    context.lineWidth = lineWidth;
+		    context.lineCap = "round";
+		    // line color
+		    context.strokeStyle = currentColor;
+		    // draw text
+		    context.clearRect(x * 0.5, y * 1.05 , x, y * 0.5);
+		    context.font = x / 5 + "px" + " Arial";
+		    var currentPercent = Math.round(currentEndAngle / 2 * 100);
+		    context.fillText(currentPercent + "%", x, y * 1.25);
+
+		    context.stroke();
+
+
+		    if (currentEndAngle > end) {
+		    	clearInterval(interval);
+		    }
+
+		}
+	}
+	
+
+    </script>
+</body>
+
+</html>

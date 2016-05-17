@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+	<meta charset="UTF-8">
+	<title>My Online CV</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-1.12.0.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script src="vendors/jquery.easings.min.js"></script>
+    <meta name="format-detection" content="telephone=no" />
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+<div class="header">
+	
+	<a href="#firstPage" id="signiture"><img src="img/signiture.png"></a>
+	<div id="drop-down">
+		<ul id="nav">
+		    <li><a href="https://windsvon.github.io">技术博客</a></li>
+		    <li class="current-section"><a href="https://windsvon.github.io/CV">个人简历</a></li>
+		    <li><a href="https://windsvon.github.io/gallery.html">摄影&amp心情</a></li>
+		    <li><a href="https://github.com/windsvon">github</a></li>
+		</ul>
+	</div>
+	<a href="https://github.com/windsvon"><img src="img/github01.png" class="github" alt="github"></a>
+
+</div>
+
+<div id="fullpage">
+    <div class="section page1" id="main-page">
+    	<img src="img/portrait.png" class="portrait" alt="Portrait">
+    	<div id="introduction">
+    		<h1>冯宇</h1>
+    		<p id="def1">会设计大楼的<span>前端</span>爱好者</p>
+    		<p id="def2">希望用技术改变世界的<span>工程师</span></p>
+    		<p id="email"><a href="mailto:yuvon1990@gmail.com">yuvon1990@gmail.com</a></p>		
+    	</div>
+    </div>
+
+    <div class="section page2">
+		<h1>个人经历</h1>
+		<div class="page2-container">
+			<div class="mark"><span>2009.9</span></div>
+			<div id="undergraduate">
+				<img src="img/TJU.png" id="TJU"/>
+				<h2>天津大学求是学部</h2>
+				<h3>茅以升班</h3>
+				<h4>打下了良好的数学力学基础</h4>
+			</div>
+			<div class="mark"><span>2013.9</span></div>
+			<div id="graduate">
+				<img src="img/UBC.png" id="UBC"/>
+				<h2>英属哥伦比亚大学地震工程研究所</h2>
+				<h3>Research Assistant</h3>
+				<h4>进行数值分析相关研究并发表了两篇英文论文</h4>
+			</div>
+			<div class="mark"><span>2015.10</span></div>
+			<div id="new-start">
+				<img src="img/FE.png" id="FE"/>
+				<h2>自学前端开发</h2>
+				<h3>初出茅庐</h3>
+				<h4>希望用互联网改造传统行业</h4>
+			</div>
+			<div id="my-will">
+				<p>曾立志于设计出地震震不倒的房子，然行业的现状令人倍感失望。国内<span>技术人员不受重视</span>，国外基建完善更是缺乏应用技术的土壤。反观互联网革命方兴未艾，从业者普遍坚信<em>技术改变世界</em>。</p>
+				<p>临渊羡鱼，不如退而结网，遂自学前端以求进入互联网行业，望有朝一日能<strong>改变传统行业</strong>。</p>
+			</div>
+		</div>
+    </div>
+
+    <div class="section page3">
+	    <div id="skills">
+		    <canvas id="canvas3-1" width="100" height="400"></canvas>	
+		    <canvas id="canvas3-2" width="100" height="400"></canvas>	
+		    <canvas id="canvas3-3" width="100" height="400"></canvas>	
+		    <canvas id="canvas3-4" width="100" height="400"></canvas>
+		    <canvas id="canvas3-5" width="100" height="400"></canvas>	
+		</div>
+		<div id="about-skills">
+			<h1>专业技能</h1>
+			<h2>千里之行，始于足下，轮子好用，代码难精</h2>
+			<p>作为半路出家的初学者，我并没有急于学习各种框架，而是致力于提高原生代码的<span>编码能力</span></p>
+		</div>	
+    </div>
+
+    <div class="section page4">
+
+		<div id="other-skills">
+			<h1>其他技能</h1>
+			<h2>能写代码能举铁，会写段子会扯淡</h2>
+			<p>资深学霸，热爱钻研，却也热爱生活。科班出身的<span>乒乓球</span>爱好者，同时爱好<strong>健身</strong>与<b>摄影</b></p>
+		</div>	
+
+	    <div id="exams">
+		    <canvas id="canvas4-1" width="200" height="200"></canvas>	
+		    <canvas id="canvas4-2" width="200" height="200"></canvas>	
+		    <canvas id="canvas4-3" width="200" height="200"></canvas>	
+		    <canvas id="canvas4-4" width="200" height="200"></canvas>
+		</div>
+    </div> <!-- end of page 4 -->
+
+    <div class="section page5">
+    	 <h1>作品展示</h1>
+    	 <div id="portfolio">
+    	 	<div>
+    	 		<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/Baidu-IFE/task0001">
+		    	 		<img src="img/black/good.gif">
+		    	 		<h2>切图练习1-简易个人主页</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+		    	 </div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/Baidu-IFE/task0001/blog.html">
+		    	 		<img src="img/black/good.gif">
+		    	 		<h2>切图练习2-简易博客页面</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+			   	</div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/Baidu-IFE/task0001/gallery.html">
+		    	 		<img src="img/black/study.gif">
+		    	 		<h2>切图练习3-瀑布流布局</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+		    	 </div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/Baidu-IFE/task0002/task0002_3.html">
+		    	 		<img src="img/black/xi.gif">
+		    	 		<h2>轮播图</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+	    	 	</div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/Baidu-IFE/task0002/task0002_5.html">
+		    	 		<img src="img/black/day.gif">
+		    	 		<h2>页面拖拽</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+	    	 	</div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/">
+		    	 		<img src="img/black/day.gif">
+		    	 		<h2>利用Jekyll搭建个人博客</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+	    	 	</div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/">
+		    	 		<img src="img/black/to.gif">
+		    	 		<h2>使用原生JavaScript实现toDoList</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+	    	 	</div>
+    	 	</div>
+
+    	 	<div>
+	    	 	<div class="scroll">
+	    	 		<img class="scroll-top" src="img/scroll-top.gif">
+		    	 	<a class="scroll-page" href="https://windsvon.github.io/CV/barCharts.html">
+		    	 		<img src="img/black/up.gif">
+		    	 		<h2>利用canvas实现动态统计图</h2>
+		    	 	</a>
+		    	 	<img class="scroll-bottom" src="img/scroll-bottom.gif">
+	    	 	</div>
+    	 	</div>
+    	 </div>
+    </div> <!-- end of page 5 -->
+
+    <div class="section page6">
+    	<div id="feeling">
+			<h2>生活不止眼前的苟且<br>还有诗和远方的田野</h2>
+			<a href="resume_zh.pdf">See My Resume in PDF!</a>
+		</div>
+
+		<div id="contact">
+			<div>
+				<img src="img/phone.gif">
+				<p>13837159656</p>
+			</div>
+
+			<div>
+				<img src="img/mail.gif">
+				<p>yuvon1990@gmail.com</p>
+			</div>
+
+			<div>
+				<img src="img/wechat.gif">
+				<p>fy19900217fy</p>
+			</div>
+		</div>
+    </div>
+</div>
+	
+</body>
+</html>
